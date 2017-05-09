@@ -8,7 +8,9 @@ Set the value to 1 if necessary
 
 [root@ip-172-31-37-250 ~]# cat /proc/sys/vm/swappiness
 1
-
+[root@ip-172-31-37-250 ~]# vi /etc/sysctl.conf  
+  > add vm.swappiness = 1 at the end of file.  
+  > write & save & quit  
 ```
 
 2. Show the mount attributes of your volume(s)
@@ -24,6 +26,9 @@ none on /proc/sys/fs/binfmt_misc type binfmt_misc (rw)
 
 3. If you have ext-based volumes, list the reserve space setting 
 - XFS volumes do not support reserve space
+```
+[root@ip-172-31-40-159 ~]# resize2fs /dev/xvde
+```
 
 4. Disable transparent hugepage support
 ```
@@ -79,11 +84,12 @@ For DNS, use nslookup
 ```
 yum install bind-utils -y
 
-[root@ip-172-31-37-250 ~]# nslookup a
+[root@ip-172-31-37-250 ~]# nslookup localhost
 Server:         172.31.0.2
 Address:        172.31.0.2#53
 
-** server can't find a: NXDOMAIN
+Name:   localhost
+Address: 127.0.0.1
 
 ```
 

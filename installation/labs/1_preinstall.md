@@ -67,17 +67,16 @@ lo        Link encap:Local Loopback
 
 For /etc/hosts, use getent
 ```
-[root@ip-172-31-37-250 ~]# getent hosts ip-172-31-37-250.us-west-2.compute.internal
-172.31.37.250   ip-172-31-37-250.us-west-2.compute.internal
-[root@ip-172-31-37-250 ~]# getent hosts ip-172-31-36-61.us-west-2.compute.internal
-172.31.36.61    ip-172-31-36-61.us-west-2.compute.internal
-[root@ip-172-31-37-250 ~]# getent hosts ip-172-31-46-252.us-west-2.compute.internal
-172.31.46.252   ip-172-31-46-252.us-west-2.compute.internal
-[root@ip-172-31-37-250 ~]# getent hosts ip-172-31-41-36.us-west-2.compute.internal
-172.31.41.36    ip-172-31-41-36.us-west-2.compute.internal
-[root@ip-172-31-37-250 ~]# getent hosts ip-172-31-40-159.us-west-2.compute.internal
-172.31.40.159   ip-172-31-40-159.us-west-2.compute.internal
-
+[root@ip-172-31-35-111 ~]# getent hosts ec2-35-163-0-231.us-west-2.compute.amazonaws.com
+172.31.45.227   ec2-35-163-0-231.us-west-2.compute.amazonaws.com
+[root@ip-172-31-35-111 ~]# getent hosts ec2-52-33-168-91.us-west-2.compute.amazonaws.com
+172.31.43.176   ec2-52-33-168-91.us-west-2.compute.amazonaws.com
+[root@ip-172-31-35-111 ~]# getent hosts ec2-52-34-141-210.us-west-2.compute.amazonaws.com
+172.31.41.138   ec2-52-34-141-210.us-west-2.compute.amazonaws.com
+[root@ip-172-31-35-111 ~]# getent hosts ec2-34-210-93-122.us-west-2.compute.amazonaws.com
+172.31.36.117   ec2-34-210-93-122.us-west-2.compute.amazonaws.com
+[root@ip-172-31-35-111 ~]# getent hosts ec2-35-162-103-130.us-west-2.compute.amazonaws.com
+172.31.35.111   ec2-35-162-103-130.us-west-2.compute.amazonaws.com
 ```
 
 For DNS, use nslookup

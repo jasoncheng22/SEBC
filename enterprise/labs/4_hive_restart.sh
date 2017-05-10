@@ -1,0 +1,1 @@
+url -u jasoncheng22:cloudera -X POST  http://ec2-35-163-0-231.us-west-2.compute.amazonaws.com:7180/api/v14/clusters/jasoncheng22/services/hive/commands/restart

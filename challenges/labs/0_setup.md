@@ -6,17 +6,29 @@ AWS
 ## List your instances by their IP address and DNS name
 IP address
 ```
+>node1
 [root@ip-172-31-17-68 ~]# getent hosts ec2-34-210-112-23.us-west-2.compute.amazonaws.com
 172.31.17.68    ec2-34-210-112-23.us-west-2.compute.amazonaws.com
+
+>node2
 [root@ip-172-31-17-68 ~]# getent hosts ec2-34-210-124-17.us-west-2.compute.amazonaws.com
 172.31.30.195   ec2-34-210-124-17.us-west-2.compute.amazonaws.com
+
+
+>node3
 [root@ip-172-31-17-68 ~]# getent hosts ec2-34-210-141-207.us-west-2.compute.amazonaws.com
 172.31.27.167   ec2-34-210-141-207.us-west-2.compute.amazonaws.com
+
+>node4
 [root@ip-172-31-17-68 ~]# getent hosts ec2-52-37-17-244.us-west-2.compute.amazonaws.com
 172.31.28.202   ec2-52-37-17-244.us-west-2.compute.amazonaws.com
+
+
+>node5
 [root@ip-172-31-17-68 ~]# getent hosts ec2-54-148-55-12.us-west-2.compute.amazonaws.com
 172.31.25.79    ec2-54-148-55-12.us-west-2.compute.amazonaws.com
 ```
+
 DNS name
 ```
 [root@ip-172-31-17-68 ~]# nslookup localhost
@@ -61,7 +73,7 @@ repolist: 7,040
 ```
 
 
-List the /etc/passwd entries for zhou and chen
+## List the /etc/passwd entries for zhou and chen
 ```
 [root@ip-172-31-17-68 ~]# cat /etc/passwd
 
@@ -70,7 +82,7 @@ chen:x:2900:2901::/home/chen:/bin/bash
 ```
 
 
-List the /etc/group entries for shanghai and beijing
+## List the /etc/group entries for shanghai and beijing
 ```
 [root@ip-172-31-17-68 ~]# cat /etc/group
 

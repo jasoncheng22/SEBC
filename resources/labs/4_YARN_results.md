@@ -1,3 +1,4 @@
+```
 [jasoncheng22@ip-172-31-45-227 ~]$ ./YARNtest.sh
 Testing loop started on Thu May 11 01:58:54 UTC 2017
 
@@ -21,3 +22,4 @@ sys     0m0.935s
 Deleted /results/tg-10GB-8-1-1024
 Deleted /results/ts-10GB-8-1-1024
 Testing loop ended on Thu May 11 02:06:31 UTC 2017
+``` 

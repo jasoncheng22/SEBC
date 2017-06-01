@@ -1,3 +1,4 @@
+```
 *************************** 1. row ***************************
                Slave_IO_State: Waiting for master to send event
                   Master_Host: ec2-35-163-0-231.us-west-2.compute.amazonaws.com
@@ -40,4 +41,4 @@ Master_SSL_Verify_Server_Cert: No
   Replicate_Ignore_Server_Ids:
              Master_Server_Id: 1
 1 row in set (0.00 sec)
-
+```
